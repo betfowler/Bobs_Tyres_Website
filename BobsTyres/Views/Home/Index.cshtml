@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="bannerImg">
+            <img size="(max-width: 1920px) 100vw, 1920px" src="~/Content/Images/LongBanner.png" />
+            <div class="bannertext">
+                <h1 id="googleText">Welcome to Bobs Tyres & Garage Services</h1>
+                <h3>With over 80 years combined experience our technicians can service, maintain and repair all makes of car and light commercial vehicle.</h3>
+                <h3>Whether you have a puncture, an annoying little rattle or need a full service including timing belt we have the facilities and qualified staff to help.</h3>
+                <h2 id="googleText">We're not just tyres!</h2>
+                <h4 class="familyText">A family, friendly service you can trust.</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="break"></div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="row">
+            <div class="col-md-11" id="boxTile">
+                <div class="row" id="boxTitle">
+                    <div class="col-md-12">MOTs</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        Here at Bobs we can take the stress out of getting your annual MOT test
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        @Html.ActionLink("Read More", "Index", "Home", new { @class = "btn btn-default" })
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3" id="boxTile">
+        <div class="row" id="boxTitle">
+            <div class="col-md-12">Repairs</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                Our workshop is able to undertake all aspects of repairs to your vehicle
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.ActionLink("Read More", "Index", "Home", new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3" id="boxTile">
+        <div class="row" id="boxTitle">
+            <div class="col-md-12">Servicing</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                Our technicians can service your car, van or light commerical vehicle
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.ActionLink("Read More", "Index", "Home", new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3" id="boxTile">
+        <div class="row" id="boxTitle">
+            <div class="col-md-12">Tyres</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                We offer a quality tyre-fitting service with a quick turnaround and great value for money
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.ActionLink("Read More", "Index", "Home", new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+</div>
